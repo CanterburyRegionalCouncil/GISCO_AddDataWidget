@@ -1,0 +1,47 @@
+{
+  "addDataTypes": [
+    {
+      "name": "addFromPortal",
+      "enabled": false,
+      "module": "AddFromPortal"
+    },
+    {
+      "name": "addFromServer",
+      "enabled": true,
+      "module": "AddFromPortal"
+    },
+    {
+      "name": "addFromWeb",
+      "enabled": true,
+      "module": "AddFromWeb"
+    },
+    {
+      "name": "addFromFile",
+      "enabled": true,
+      "module": "AddFromFile"
+    }
+  ],
+  "geometryServiceUrl": "https://bokke.geobiz.local/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+  "addFromPortal": {
+    "portalSearchUrl": "https://bokke.geobiz.local/portal",
+    "portalSearchItemTypes": [
+      "Feature Service",
+      "Map Service",
+      "Image Service",
+	  "WMS"
+    ]
+  },
+  "addFromServer": {
+    "serverSearchUrl": "https://bokke.geobiz.local/arcgis/rest/services"
+  },
+  "emailSettings": {
+    "emailRecepient": "gis_support@mpi.govt.nz",
+    "emailSubject": "<Place Holder>",
+    "emailBody": "%0D%0A Layer Name :{title} %0D%0A %0D%0A Layer Item Id: {id} %0D%0A %0D%0A Reason:<user input>"
+  },
+  "searchMode": {
+    "portalOnlySearch": false,
+    "serverOnlySearch": true,
+    "serverAndPortalSearch": false
+  }
+}

@@ -1,0 +1,15 @@
+<div class="jimu-add-data-pane" data-dojo-attach-point="addFromPortal">
+    <div class="desc">${nls.addDataPortalDescription}</div>
+    <div class="portal-search">
+        <input class="portal-search-field" data-dojo-type="dijit/form/TextBox" value="" data-dojo-attach-point="portalSearchField"></input>
+        <div class="jimu-btn portal-search-btn" data-dojo-attach-event="click:_onPortalSearchTrigger">${nls.search}</div>
+    </div>
+    <div class="portal-search-extent">
+        <div data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="withinMapArea" data-dojo-props='label:"${nls.withinMapArea}"' class="jimu-add-data-type"></div>
+    </div>
+    <div class="portal-search-results-count" data-dojo-attach-point="resultCount">0 ${nls.resultsFound}</div>
+    <div class="portal-search-results-display" data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="results"></div>
+    <!-- both of the below lines are for opening the email client without disturbing map events -->
+    <a href="#" style="display:none" data-dojo-attach-point="emailLink" target="emailInvoker"></a>
+    <iframe style="display:none;height:0px;width:0px;" data-dojo-attach-point="emailInvoker" name="emailInvoker"></iframe>
+</div>

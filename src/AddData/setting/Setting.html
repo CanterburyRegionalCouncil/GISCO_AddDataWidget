@@ -1,0 +1,66 @@
+<div style="width:100%;height:auto;">
+    <div data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="addFromPortal" data-dojo-props='label:"${nls.addFromPortal}"'  class="jimu-add-data-type"></div>
+    <div data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="addFromServer" data-dojo-props='label:"${nls.addFromServer}"'  class="jimu-add-data-type"></div>
+    <div data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="addFromWeb" data-dojo-props='label:"${nls.addFromWeb}"'        class="jimu-add-data-type"></div>
+    <div data-dojo-type="jimu/dijit/CheckBox" data-dojo-attach-point="addFromFile" data-dojo-props='label:"${nls.addFromFile}"'      class="jimu-add-data-type"></div>
+    <div class="jimu-add-data-settings">
+        <table  data-dojo-attach-point="addDataSettings" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td class="first">*${nls.portalSearchUrl}</td>
+                    <td class="second">
+                        <input type="text" data-dojo-type="dijit/form/TextBox"
+                               data-dojo-attach-point="portalSearchUrl"
+                               data-dojo-props="style:{width:'100%'}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first">*${nls.serverSearchUrl}</td>
+                    <td class="second">
+                        <input type="text" data-dojo-type="dijit/form/TextBox"
+                               data-dojo-attach-point="serverSearchUrl"
+                               data-dojo-props="style:{width:'100%'}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first">*${nls.geometryServiceUrl}</td>
+                    <td class="second">
+                        <input type="text" data-dojo-type="dijit/form/TextBox"
+                               data-dojo-attach-point="geometryServiceUrl"
+                               data-dojo-props="style:{width:'100%'}" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="jimu-add-data-email-settings">
+        <table data-dojo-attach-point="emailSettings" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td class="first">*${nls.emailRecepient}</td>
+                    <td class="second">
+                        <input type="text" data-dojo-type="dijit/form/TextBox"
+                               data-dojo-attach-point="emailRecepient"
+                               data-dojo-props="style:{width:'100%'}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first">*${nls.emailSubject}</td>
+                    <td class="second">
+                        <input type="text" data-dojo-type="dijit/form/TextBox"
+                               data-dojo-attach-point="emailSubject"
+                               data-dojo-props="style:{width:'100%'}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first">*${nls.emailBody}</td>
+                    <td class="second" style="height:150px;">
+                        <textarea  data-dojo-attach-point="emailBody"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

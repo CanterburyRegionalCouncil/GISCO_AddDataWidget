@@ -1,0 +1,53 @@
+.jimu-add-data-type{
+    position:relative;
+    float:left;
+    width:100%;
+    color:#596679;
+    margin-top:20px;
+}
+.jimu-add-data-settings {
+    position:relative;
+    float:left;
+    width:100%;
+    color:#596679;
+    margin-top:20px;
+}
+.jimu-add-data-settings table {
+    width:100%;
+}
+.jimu-add-data-settings td {
+    padding-bottom:10px;
+}
+.jimu-add-data-settings td.first {
+    width:170px;
+}
+/*-email settings*/
+.jimu-add-data-email-settings {
+    position:relative;
+    float:left;
+    width:100%;
+    color:#596679;
+    margin-top:20px;
+
+}
+.jimu-add-data-email-settings table {
+    width:100%;
+}
+.jimu-add-data-email-settings td {
+    padding-bottom:10px;
+}
+.jimu-add-data-email-settings td.first {
+    width:170px;
+}
+.jimu-add-data-email-settings textarea {
+    height: 100%;
+    width: 100%;
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;    
+    resize: none;
+    border:1px solid #ccc;
+    font-size: 14px;    
+    font-family:Arial;
+}
+
